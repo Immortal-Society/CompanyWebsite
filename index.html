@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+	
+	<style>
+		body{
+			padding: 0% 1% 0% 1%;
+			background-image: url(Images/4677.jpg);
+			background-size: cover;
+			color: white;
+		}
+		#page{
+			text-align: center;
+		}
+
+		#page a{
+			
+			text-align: center;
+			color: inherit;
+		}
+		#page .column img{
+			width: 100%;
+			background-color: transparent;
+		}
+		#page .row:after {
+			content:"";
+			display: table;
+			clear: both;
+		}
+		#page .column {
+			float: left;
+			width: 100%;
+			margin: 10px;
+			position: relative;
+  			text-align: center;
+  			color: white;
+			display: block;
+
+		}
+		#page .column .centered {
+			position: absolute; 
+			bottom: 0; 
+			background: rgb(0, 0, 0);
+			background: rgba(0, 0, 0, 0.5); /* Black see-through */
+			color: #f1f1f1; 
+			width: 100%;
+			height: 100%;
+			transition: .5s ease;
+			opacity:1;
+			color: white;
+			font-size: 20px;
+			display: flex;
+  			align-items: center; /** Y-axis align **/
+  			justify-content: center; /** X-axis align **/
+		}
+		#page .column .centered div{
+			
+			vertical-align: middle;
+		}
+		#page .column:hover .centered {
+ 		 opacity: 0;
+		}
+		#page .column:hover img
+		{
+			transition-duration: .25s;
+ 			transition-delay: 0.1s;
+			width: 101%;
+		}
+		#page video{
+			padding: 20px 0px;
+		}
+		@media (min-width: 768px){
+			body{
+				max-width:1920px;
+			}
+			#page .column {
+				width: 47%;
+			}
+		}
+		@media (min-width: 1024px){
+			body{
+				
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#page .column {
+				width: 31%;
+			}
+			
+		}
+	</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="JavaScripts/loadHeaderFooter.js"></script>
+</head>
+
+<body>
+
+	<div id ="header"></div>
+	<div id="page">
+		<video width="95%"  autoplay loop>
+			<source src="Images/Icon animation.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+		<h1>Our Services</h1>
+		<a>Contact Us</a>
+		<div class="row">
+			<div class="column">
+				<a href="#webdev"><img src="Images/6312072116929169f0da0532_office-vector-illustration.jpg" alt="Web development service page">
+					<div class="centered">Web Development</div>
+				</a>
+			</div>
+			<div class="column">
+				<a href="#gamedev"><img src="Images/shutterstock_1209178567_17fafc5540.png" alt="Game development service page">
+					<div class="centered">Game Development</div>
+				</a>
+			</div>
+			<div class="column">
+				<a href="#mobiledev"><img src="Images/131612762528484192_2_mobile_development_banner_59c98d40e8.png" alt="Mobile development service page">
+					<div class="centered">Mobile Development</div>
+				</a>
+			</div>
+		</div>
+		<h1>Our Games</h1>
+		<div class="row">
+			<div class="column">
+				<a href="#fruitjuicergame"><img src="Images/FruitJuicer_Icon.png" alt="fruit juicer unlocked page">
+					<div class="centered">Fruit juicer Unlocked</div>
+				</a>
+			</div>
+		</div>
+		<h1>Our Software</h1>
+		<div class="row">
+			<div class="column">
+				<a href="#TTHTAsset"><img src="Images/TerrainTextureByHeightToolLogoCard.png" alt="TTHT page">
+					<div class="centered">Terrain Texture By Height tool</div>
+				</a>
+			</div>
+		</div>
+
+
+		<h1>About Immortal Society, LLC </h1>
+		<p>We are a small company that enjoys bulding software of multiply types</p>
+		<button type="button">Learn more</button>
+	</div>
+	
+
+	
+	<div id="footer"></div>
+
+</body>
+</html>

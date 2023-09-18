@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<style>
+		body{
+			padding: 0% 1% 0% 1%;
+			background-image: url(Images/4677.jpg);
+			background-size: cover;
+			color: white;
+		}
+		#page
+		{
+			font-family: "Space Mono", monospace;
+		}
+		#page .boxes{
+			text-align: center;
+		}
+		#page .boxes:after {
+			content:"";
+			display: table;
+			clear: both;
+		}
+		#page .contact-box{
+			background-color: whitesmoke;
+			float:left;
+			color: black;
+			width: auto;
+			height: auto;
+			width: 85%;
+			margin-left:5px;
+			padding-left: 20px;
+			border-width:3px;
+ 			border-style:solid;
+ 			border-color:#287EC7;
+			border-radius: 25px;
+		}
+		#page .hours-box{
+			float:left;
+			background-color: whitesmoke;
+			color: black;
+			width: auto;
+			height: auto;
+			width: 85%;
+			margin-top: 5%;
+			margin-left:5px;
+			padding-left: 20px;
+			border-width:3px;
+ 			border-style:solid;
+ 			border-color:#287EC7;
+			border-radius: 25px;
+		}
+		#page span::before{
+			content:"\a";
+			white-space: pre;
+		}
+		#page iframe{
+			margin-top: 10px;
+			width: 95%;
+			height: 300px;
+			border-width:0;
+			margin-left: 10px;
+		}
+		@media (min-width: 768px){
+			body{
+				max-width:1920px;
+			}
+			#page .hours-box{
+				width: 40%;
+				margin-left: 10%;
+				margin-top: 20%;
+			}
+			#page .contact-box{
+				width: 40%;
+			}
+			#page span::before{
+			content:" ";
+			white-space: pre;
+			}
+			#page .span2::before {
+				content:"\a";
+				white-space: pre;
+			}
+			#page iframe{
+				height: 500px;
+			}
+		}
+		@media (min-width: 1024px){
+
+			#page .hours-box{
+				width: 40%;
+				margin-left: 5%;
+				margin-top: 10%;
+			}
+			#page iframe{
+				height: 800px;
+			}
+			
+		}
+	</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="JavaScripts/loadHeaderFooter.js"></script>
+</head>
+
+<body>
+
+	<div id ="header"></div>
+	<div id="page">
+		<div class="boxes">
+			<div Class="contact-box">
+				<h1>Contact Us</h1>
+				<p>Email:  <span>immortalsocietyllc@gmail.com</span></p>
+				<p>Call:<span>936-681-8106</span></p>
+				<p>Mail: <span>139 County Rd 4895</span>
+					<span class="span2">Dayton, TX 77535</span></p>
+			</div>
+			<div Class="hours-box">
+				<h1>Hours of Operations</h1>
+				<p>Monday<span>8AM to 2:30PM</span><span class="span2">4:30PM to 7PM CST</span></p>
+				<p>Tuesday<span>8AM to 2:30PM</span><span class="span2">4:30PM to 7PM CST</span></p>
+				<p>Wednesday<span>8AM to 2:30PM</span><span class="span2">4:30PM to 7PM CST</span></p>
+				<p>Thursday<span>8AM to 2:30PM</span><span class="span2">4:30PM to 7PM CST</span></p>
+				<p>Friday<span>8AM to 2:30PM</span><span class="span2">4:30PM to 7PM CST</span></p>
+				<p>Saturday<span>8AM to 2:30PM CST</span class="span2"></p>
+				<p>Sunday<span>Closed</span></p>
+			</div>
+		</div>
+
+		<iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&showTitle=0&showNav=1&showCalendars=0&showTabs=0&src=NDlmOWJkZDNhZTM4OTYwNTY1ZDY3OGQ0M2NlZmI5MjM2YzY5Y2Q3N2VhNjM5NzAxM2M2N2VmODk2ZmE4ZDczZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23AD1457"  frameborder="0" scrolling="no"></iframe>
+	</div>
+	
+
+	
+	<div id="footer"></div>
+
+</body>
+</html>
