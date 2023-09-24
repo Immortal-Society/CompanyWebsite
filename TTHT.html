@@ -5,114 +5,6 @@
 <title>Home</title>
 	
 	<style>
-		body{
-			padding: 0% 1% 0% 1%;
-			background-image: url(Images/4677.jpg);
-			background-size: cover;
-			color: white;
-		}
-		#page{
-			text-align: center;
-            font-family: "Space Mono", monospace;
-		}
-
-		#page a{
-			
-			text-align: center;
-			color: inherit;
-		}
-		#page .column img{
-			width: 100%;
-			background-color: transparent;
-		}
-		#page .row:after {
-			content:"";
-			display: table;
-			clear: both;
-		}
-		#page .column {
-			float: left;
-			width: 100%;
-			margin: 10px;
-			position: relative;
-  			text-align: center;
-  			color: white;
-			display: block;
-
-		}
-		#page .column .centered {
-			position: absolute; 
-			bottom: 0; 
-			background: rgb(0, 0, 0);
-			background: rgba(0, 0, 0, 0.5); /* Black see-through */
-			color: #f1f1f1; 
-			width: 100%;
-			height: 100%;
-			transition: .5s ease;
-			opacity:1;
-			color: white;
-			font-size: 20px;
-			display: flex;
-  			align-items: center; /** Y-axis align **/
-  			justify-content: center; /** X-axis align **/
-		}
-		#page .column .centered div{
-			
-			vertical-align: middle;
-		}
-		#page .column:hover .centered {
- 		 opacity: 0;
-		}
-		#page .column:hover img
-		{
-			transition-duration: .25s;
- 			transition-delay: 0.1s;
-			width: 101%;
-		}
-        #page .TTHT-Display{
-           width:100%;
-           height: 20em;
-            background-image: url("Images/c62dc872-9ffd-4f73-8259-c4d1404871c9.png");
-            background-repeat: no-repeat;
-            background-attachment: fixed;  
-            background-size: 100% 50%;
-            margin-top: 100px;
-            
-        }
-        #page .TTHT-Display-Container
-        {
-            height: 40em;
-        }
-       
-        #page .store-box{
-            background-color: whitesmoke;
-            color: black;
-            width: 95%;
-            text-align: left;
-            border-width:3px;
-            border-style:solid;
-            border-color:#287EC7;
-            border-radius: 25px;
-            font-size: 20px;
-        }
-        #page .store-box img{
-           float: left;
-           width: 80px;
-           margin-left: 10px;
-           margin-top: 20px;
-        }
-        #page .store-box h3{
-            margin-top: 25px;
-            padding-left: 20px;
-            font-size: .75em;
-            
-        }
-        #page .store-box h1{
-            margin-top: 20px;
-            font-size: 1em;
-          text-align: center;
-        }
-       
 		#page video{
             margin-top: 50px;
 		}
@@ -146,78 +38,25 @@
         }
 
 		@media (min-width: 768px){
-			body{
-				max-width:1920px;
-			}
-			#page .column {
-				width: 47%;
-			}
             #page .play-now-box{
                 width: 45%;
             }
             #page iframe{
                 height: 20em;
             }
-            #page .store-box{
-                position:absolute;
-                width: 60%;
-                bottom: 10em; 
-                left: 25%;
-            }
-            #page .TTHT-Display{
-                height: 30em;
-                background-size: 100% 50%;
-                background-position: center;
-                
-            }
-
 		}
 		@media (min-width: 1024px){
-			body{
-				
-				margin-left: auto;
-				margin-right: auto;
-			}
-			#page .column {
-				width: 31%;
-			}
-           
             #page .play-now-box img{
                 width: 50%;
             }
             #page iframe{
                 height: 40em;
             }
-            #page .store-box{
-                width: 50%;
-                bottom: 8em;
-                
-            }
-            #page .store-box img{
-                width: 140px;
-            }
-            #page .store-box h3{
-                margin-top: 25px;
-                padding-left: 20px;
-                font-size: 1.2em;
-            }
-            #page .store-box h1{
-                text-align: left;
-                margin-top: 100px;
-                font-size: 1.5em;
-            }
-            #page .store-box p{
-                text-align: center;
-            }
-            #page .TTHT-Display{
-                height: 40em;
-                background-size: 100% 100%;
-                background-position: bottom;
-                
-            }
-			
 		}
 	</style>
+<link rel="stylesheet" href="CSS/pageStyle.css">
+<link rel="stylesheet" href="CSS/productBoxes.css">
+<link rel="stylesheet" href="CSS/fullscreenImageWindow.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="JavaScripts/loadHeaderFooter.js"></script>
 </head>
@@ -226,16 +65,11 @@
     
 	<div id ="header"></div>
 	<div id="page">
-        <div  class="TTHT-Display">
-            <div class="TTHT-Display-Container">
-                
-            </div>
-        </div>
-        <div Class="store-box">
+        <div Class="product-box">
             <img src="Images/TerrainTextureByHeightToolLogoCard.png" alt="TTHT icon">
             <h3>Terrain Texture by Height Tool</h3>
             <small>Unity Asset Tool</small>
-            <h1>Paint Unity terrains with a few clicks</h1>
+            <h2>Paint Unity terrains with a few clicks</h2>
             <p> Paints on a Unity terrain based on the terrain layers you set and the desired height you want for each layer of your choice. Unity Terrain is painted with just a few easy clicks in the inspector. Additionally, this can be achieved at runtime. The Terrain Texture By Height Tool makes it easy to paint your design on your unity terrain or add some cool paint effects at runtime. It comes with grass, pre-made Unity Terrain, six pre-made Unity Terrain layers, torch with flame particle effect and flame lighting, rain system, and flood system.</p>
         </div>
         <h1>Videos</h1>
@@ -244,28 +78,34 @@
         <h1>Screenshots</h1>
         <div class="row">
 			<div class="column">
-				<img src="Images/TTHT_Screenshot1.jpg" alt="FruitJuicer_image">
+				<img class="enlargeImage" src="Images/TTHT_Screenshot1.jpg" alt="Unity terrain before painted">
 			</div>
 			<div class="column">
-				<img src="Images/TTHT_Screenshot2.jpg" alt="FruitJuicer_image">
+				<img class="enlargeImage" src="Images/TTHT_Screenshot2.jpg" alt="Unity terrain painted with the Terrain Texutre by Height Tool">
 			</div>
 			<div class="column">
-				<img src="Images/c62dc872-9ffd-4f73-8259-c4d1404871c9.png" alt="FruitJuicer_image">
+				<img class="enlargeImage" src="Images/c62dc872-9ffd-4f73-8259-c4d1404871c9.png" alt="">
 			</div>
 		</div>
         <hr>
         
         <div class ="boxes">
             <div Class="play-now-box">
-                <h1>Demo</h1>
-                <a href="https://davharr28.github.io/Terrain_Texture_By_Height_Tool/" target="_blank"><img src="Images/Screenshot 2023-08-31 214703.png" alt="TTHT Demo Link"  ></a>
+                <h2>Demo</h2>
+                <a href="TTHTDemo.html"><img src="Images/Screenshot 2023-08-31 214703.png" alt="TTHT Demo Link"  ></a>
             </div>
             <div Class="play-now-box">
-                <h1>Buy Now</h1>
+                <h2>Buy Now</h2>
                 <a href="https://assetstore.unity.com/packages/tools/terrain/terrain-texture-by-height-19749" target="_blank"><img src="Images/unity-asset-store-full.png" alt="TTHT Store Link" ></a>
             </div>
         </div>
 	</div>
+    <div id="fullscreenImageWindow" class="fullscreenImageWindow">
+        <span class="fullscreenImageWindowClose">&times;</span>
+        <img class="fullscreenImageWindow-content" id="fullscreenImageWindowImage">
+        <div id="fullscreenImageWindowCaption"></div>
+    </div>
+    <script src="JavaScripts/imageEnlarger.js"></script>
 	<div id="footer"></div>
 
 </body>

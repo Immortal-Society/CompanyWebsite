@@ -1,5 +1,4 @@
 
-
 $(document).ready(function(){
 	//can delete this when need to be
 	var mobile = true;

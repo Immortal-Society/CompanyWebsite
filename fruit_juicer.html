@@ -3,106 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Home</title>
-	
 	<style>
-		body{
-			padding: 0% 1% 0% 1%;
-			background-image: url(Images/4677.jpg);
-			background-size: cover;
-			color: white;
-		}
-		#page{
-			text-align: center;
-            font-family: "Space Mono", monospace;
-		}
-
-		#page a{
-			
-			text-align: center;
-			color: inherit;
-		}
-		#page .column img{
-			width: 100%;
-			background-color: transparent;
-		}
-		#page .row:after {
-			content:"";
-			display: table;
-			clear: both;
-		}
-		#page .column {
-			float: left;
-			width: 100%;
-			margin: 10px;
-			position: relative;
-  			text-align: center;
-  			color: white;
-			display: block;
-
-		}
-		#page .column .centered {
-			position: absolute; 
-			bottom: 0; 
-			background: rgb(0, 0, 0);
-			background: rgba(0, 0, 0, 0.5); /* Black see-through */
-			color: #f1f1f1; 
-			width: 100%;
-			height: 100%;
-			transition: .5s ease;
-			opacity:1;
-			color: white;
-			font-size: 20px;
-			display: flex;
-  			align-items: center; /** Y-axis align **/
-  			justify-content: center; /** X-axis align **/
-		}
-		#page .column .centered div{
-			
-			vertical-align: middle;
-		}
-		#page .column:hover .centered {
- 		 opacity: 0;
-		}
-		#page .column:hover img
-		{
-			transition-duration: .25s;
- 			transition-delay: 0.1s;
-			width: 101%;
-		}
-
-        #page .store-box{
-            background-color: whitesmoke;
-            color: black;
-            width: 95%;
-            text-align: left;
-            border-width:3px;
-            border-style:solid;
-            border-color:#287EC7;
-            border-radius: 25px;
-            font-size: 20px;
-        }
-        #page .store-box img{
-           float: left;
-           width: 80px;
-           margin-left: 10px;
-           margin-top: 20px;
-        }
-        #page .store-box h3{
-            margin-top: 25px;
-            padding-left: 20px;
-            font-size: .75em;
-            
-        }
-        #page .store-box small{
-
-            font-size: .7em;
-        }
-        #page .store-box h1{
-            margin-top: 50px;
-            font-size: 1em;
-          text-align: center;
-        }
-       
 		#page video{
             margin-top: 50px;
 		}
@@ -147,104 +48,59 @@
             width: 150px;
         }
 		@media (min-width: 768px){
-			body{
-				max-width:1920px;
-			}
-			#page .column {
-				width: 47%;
-			}
             #page .play-now-box{
                 width: 50%;
             }
             #page iframe{
                 height: 20em;
             }
-            #page .store-box{
-                position:absolute;
-                width: 50%;
-                bottom: 20em; 
-            }
 		}
 		@media (min-width: 1024px){
-			body{
-				
-				margin-left: auto;
-				margin-right: auto;
-			}
-			#page .column {
-				width: 31%;
-			}
             #page .play-now-box{
                 width: 30%;
             }
             #page iframe{
                 height: 40em;
             }
-            #page .store-box{
-                width: 50%;
-                bottom: 10em;
-                
-            }
-            #page .store-box img{
-                width: 140px;
-            }
-            #page .store-box h3{
-                margin-top: 25px;
-                padding-left: 20px;
-                font-size: 1.2em;
-            }
-            #page .store-box small{
-
-                font-size: 1em;
-                font-weight: 100;
-            }
-            #page .store-box h1{
-                text-align: left;
-                margin-top: 100px;
-                font-size: 2em;
-            }
-            #page .store-box p{
-                margin-top: 50px;
-                font-size: 1.1em;
-                text-align: center;
-            }
-			
 		}
 	</style>
+<link rel="stylesheet" href="CSS/pageStyle.css">
+<link rel="stylesheet" href="CSS/productBoxes.css">
+<link rel="stylesheet" href="CSS/fullscreenImageWindow.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="JavaScripts/loadHeaderFooter.js"></script>
+
 </head>
 
 <body>
-    
 	<div id ="header"></div>
 	<div id="page">
+        <div Class="product-box">
+            <img src="Images/FruitJuicer_Icon.png" alt="fruit juicer icon">
+            <h3>Fruit Juicer Unlocked<br><small>Casual-Free</small></h3>
+            <h2>Addictive Idle tap game!</h2>
+            <p>Use your farm products to make juice in your juice factory.
+                Tap on falling fruits on your farm and juice bottles in the factory, or use your friend's bees and robot friends, to win compelling levels in this fun tap adventure!</p>
+        </div>
         <video width="100%"  autoplay loop>
 			<source src="Images/Icon animation.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 		  </video>
-            <div Class="store-box">
-                <img src="Images/FruitJuicer_Icon.png" alt="fruit juicer icon">
-                <h3>Fruit Juicer Unlocked<br><small>Casual-Free</small></h3>
-                
-                <h1>Addictive Idle tap game!</h1>
-                <p>Use your farm products to make juice in your juice factory.
-                    Tap on falling fruits on your farm and juice bottles in the factory, or use your friend's bees and robot friends, to win compelling levels in this fun tap adventure!</p>
-            </div>
+           
 
         
         <h1>Trailer</h1>
-        <iframe  src="https://www.youtube.com/embed/-FbJf2Mi-QI?si=1LDpIzhTIWbzaR6L"></iframe>
+        <iframe src="https://www.youtube.com/embed/-FbJf2Mi-QI?si=1LDpIzhTIWbzaR6L"></iframe>
         <h1>Screenshots</h1>
         <div class="row">
 			<div class="column">
-				<img src="Images/unnamed.png" alt="FruitJuicer_image">
+				<img class="enlargeImage" src="Images/unnamed.png" alt="Menu">
 			</div>
 			<div class="column">
-				<img src="Images/unnamed2.png" alt="FruitJuicer_image">
+				<img class="enlargeImage" src="Images/unnamed2.png" alt="Level Select">
 			</div>
 			<div class="column">
-				<img src="Images/unnamed3.png" alt="FruitJuicer_image">
+				<img class="enlargeImage" src="Images/unnamed3.png" alt="Forest Helpers">
 			</div>
 		</div>
         <hr>
@@ -252,7 +108,7 @@
         <div class="background-image">
             <div class ="boxes">
                 <div Class="play-now-box">
-                    <h1>Fruit Juicer Unlocked</h1>
+                    <h2>Fruit Juicer Unlocked</h2>
                     <p>Removes all the ads and in app purchases from the game Fruit Juicer to allow the players to enjoy the experience without it.</p>
                 </div>
             </div>
@@ -260,12 +116,19 @@
         
         <div class ="boxes">
             <div Class="play-now-box">
-                <h1>Play Now</h1>
+                <h2>Play Now</h2>
                 <a href="https://play.google.com/store/apps/details?id=com.immortalsociety.FruitJuicerUnlocked" target="_blank"><img src="Images/Get-It-On-Google-Play.png" alt="Fruit Juicer Android Game Link" ></a>
             </div>
         </div>
 	</div>
+    <div id="fullscreenImageWindow" class="fullscreenImageWindow">
+        <span class="fullscreenImageWindowClose">&times;</span>
+        <img class="fullscreenImageWindow-content" id="fullscreenImageWindowImage">
+        <div id="fullscreenImageWindowCaption"></div>
+    </div>
+    <script src="JavaScripts/imageEnlarger.js"></script>
 	<div id="footer"></div>
 
+    
 </body>
 </html>
