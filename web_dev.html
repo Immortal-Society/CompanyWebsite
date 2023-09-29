@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Development</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<style>
+		#page h1{
+            font-size: 20px;
+            text-align: left;
+            background-color: transparent;
+            color: black;
+            font-weight: bolder;
+            text-align: center;
+        }
+        #page button{
+            background-color: #005772;
+            color: white;
+            font-size: 20px;
+            margin-top: 20px;
+            width: 200px;
+            height: 100px;
+        }
+        #page .desktop_image{
+            width:100%;
+        }
+        #page .border{
+            align-content: center;
+            background-color: whitesmoke;
+            color: black;
+        }
+        #page h3{
+            align-content: center;
+            background-color: black;
+            color: white;
+            font-size: x-large;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'myArea myArea myArea';
+            gap: 1px;
+            background-color: white;
+            padding: 5px;
+            font-size: 12px;
+            color: black;
+        }
+
+        .grid-container > div {
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 1px 1px;
+            word-break: break-all;
+            
+        }
+        .grid-title {
+            grid-column: span 3;
+            background-color: whitesmoke;
+        }
+        .grid-header {
+            background-color: black;
+            color:white;
+        }
+        .grid-check{
+            color: green;
+            text-shadow: -2px 0 1px black;
+        }
+        small{
+            font-size:8px;
+        }
+        #cb-pages{
+            width: 80%;
+            font-size: 1.2em;
+        }
+        
+		@media (min-width: 768px){
+			#page h1{
+                font-size: 50px;
+            }
+            .grid-container {
+                gap: 10px;
+                padding: 10px;
+                font-size: 25px;
+            }
+            .grid-container > div {
+                padding: 20px 5px;
+                word-break: normal;
+            }
+            small{
+                font-size:12px;
+            }
+            #page .desktop_image{
+                width:60%;
+            }
+            
+		}
+		@media (min-width: 1024px){
+            #page h1{
+                font-size: 70px;
+            }
+
+		}
+	</style>
+<link rel="shortcut icon" href="Images/Immortal Society Logo.ico">
+<link rel="stylesheet" href="CSS/pageStyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="JavaScripts/loadHeaderFooter.js"></script>
+</head>
+
+<body>
+	<div id ="header"></div>
+	<div id="page">
+        <!--Price table-->
+        <div class="grid-container">
+            <div class="grid-title">Web Development</div>
+            <div class="grid-header">Services</div>
+            <div class="grid-header">Standard $500 USD <small>one time fee</small> </div>  
+            <div class="grid-header">E-Commerce $1,500 USD <small>one time fee</small> </div>
+            <div>Annually price </div>
+            <div>As low as $11 USD per year for hosting and custom domain</div>
+            <div>As low as $111 USD per year for hosting, database, and custom domain</div>
+            <div>Custom Domain</div>
+            <div class="grid-check">&#10004;</div>
+            <div class="grid-check">&#10004;</div>
+            <div>SSL</div>
+            <div class="grid-check">&#10004;</div>
+            <div class="grid-check">&#10004;</div>
+            <div>Crossplatform (IOS, Android, PC)</div>
+            <div class="grid-check">&#10004;</div>
+            <div class="grid-check">&#10004;</div>
+            <div>Forward Business Email <small>up to 15 Forward emails that end with @customDomain.com</small></div>
+            <div class="grid-check">&#10004;</div>
+            <div class="grid-check">&#10004;</div>
+            <div>Host Static Web Site </div>
+            <div class="grid-check">&#10004;</div>
+            <div class="grid-check"></div>
+            <div>Host Dynamic Web Site </div>
+            <div class="grid-check"></div>
+            <div class="grid-check">&#10004;</div>
+            <div>Business Email <small>Extra charge <a href="https://workspace.google.com/pricing.html" target="_blank">https://workspace.google.com/pricing.html</a> </small></div>
+            <div class="grid-check"></div>
+            <div class="grid-check"></div>
+            <div class="grid-title">Services includes design, develop, test, publish and maintaining the website </div>
+            <div>Header <small>Menu Navigation and company logo </small></div>
+            <div class="grid-check">&#10004;</div>
+            <div class="grid-check">&#10004;</div>
+            <div>Footer <small>Contact info, social media links, legal(Privacy policy, accessibility statement) </small></div>
+            <div class="grid-check">&#10004;</div>
+            <div class="grid-check">&#10004;</div>
+            <div>Home page</div>
+            <div class="grid-check">&#10004;</div>
+            <div class="grid-check">&#10004;</div>
+            <div>Contact page</div>
+            <div class="grid-check">&#10004;</div>
+            <div class="grid-check">&#10004;</div>
+            <div>Speciality page <small>extra pages will cost more</small></div>
+            <div class="grid-check">&#10004;</div>
+            <div class="grid-check">&#10004;</div>
+            <div>Customer accounts with profile</div>
+            <div class="grid-check"></div>
+            <div class="grid-check">&#10004;</div>
+            <div>Shop/Order cart</div>
+            <div class="grid-check"></div>
+            <div class="grid-check">&#10004;</div>
+            <div>Owner has acess to database to make changes to the inventory when needed</div>
+            <div class="grid-check"></div>
+            <div class="grid-check">&#10004;</div>
+            <div>Submit order with email confirmation</div>
+            <div class="grid-check"></div>
+            <div class="grid-check">&#10004;</div>
+            <div>Employee page that will display all online orders</div>
+            <div class="grid-check"></div>
+            <div class="grid-check">&#10004;</div>
+            <div>Reward system</div>
+            <div class="grid-check"></div>
+            <div class="grid-check">&#10004;</div>
+            <div>Accept payments <small>2.9% +30 cents per successful card charge *additional charges may apply check <a href="https://stripe.com/pricing">https://stripe.com/pricing</a></small></div>
+            <div class="grid-check"></div>
+            <div >$500 USD one time fee extra</div>
+        </div>
+        <div class="border">
+            <button>Contact Us</button>
+            <h2>Contact us via email at support@immortalsocietyllc.com with subject line web development.</h2>
+        </div>
+        
+        <div class="border">
+            <h1>Restaurant website showcase Standard Plan</h1>
+            <select  id="cb-pages" onchange="ComboBoxValueChanged('cb-pages')">
+                <option value="home-page">Home page</option>
+                <option value="contact-page">Contact page</option>
+                <option value="spec-page">Speciality page</option>
+                <option value="mobile-look">Mobile look</option>
+            </select>
+            <div id="home-page" class="dropDownItems">
+                <h3>Home Page</h3>
+                <img class="desktop_image" src="Images/WebDemo_HomePage.jpg" >
+            </div>
+            <div id="contact-page" class="dropDownItems">
+                <h3>Contact Page</h3>
+                <img class="desktop_image" src="Images/WebDemo_ContactPage.jpg" >
+            </div>
+            <div id="spec-page" class="dropDownItems">
+                <h3>Speciality Page</h3>
+                <img class="desktop_image" src="Images/WebDemo_MenuPage1.jpg" >
+                <img class="desktop_image" src="Images/WebDemo_MenuPage2.jpg" >
+                <img class="desktop_image" src="Images/WebDemo_MenuPage2_es.jpg">
+            </div>
+            <div id="mobile-look" class="dropDownItems">
+                <h3>Mobile Look</h3>
+                <img src="Images/WebDemo_MenuPage1_mobile.jpg" >
+                <img src="Images/WebDemo_MenuPage2_mobile.jpg" >
+            </div>
+        </div>
+	</div>
+	
+	<div id="footer"></div>
+    <script src="JavaScripts/ComboboxElementDisplay.js" startId = "home-page" dropDownItemClass="dropDownItems"></script>
+</body>
+</html>
