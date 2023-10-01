@@ -15,7 +15,7 @@ footer .row:after {
 footer .column {
   float: left;
   width: 100%;
-  padding: 0px 0px 20px 20px;
+  padding: 0px 5px 100px 5px;
 }
 footer .column p{
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
@@ -41,13 +41,11 @@ footer a{
     footer .column{
         width: 47%;
     }
-    footer .column hr{
-        width:90%;
-    }
 }
 @media (min-width: 1280px){
     footer .column{
         width: 23%;
     }
+
     
 }
